@@ -42,6 +42,7 @@ a {
     height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -65,4 +66,20 @@ a {
 
 .secondary-text {
     font-size: 18px;
+}
+
+.second-segment {
+    text-align: center;
+}
+
+.second-segment .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.info img {
+    max-height: 500px;
+    width: auto;
 }
