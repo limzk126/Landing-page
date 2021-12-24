@@ -39,7 +39,6 @@ a {
     justify-content: center;
     align-items: center;
     background-image: url('images/main_background.jpg');
-    height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,6 +52,28 @@ a {
     height: auto;
     border-radius: 25px;
     padding: 10px;
+    margin: 120px 0px;
+}
+
+.hero-bottom .button {
+    background-color: #004A7F;
+    border-radius: 10px;
+    border: none;
+    color: yellow;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+    0% { background-color: #229605; box-shadow: 0 0 3px #229605; }
+    50% { background-color: #00ff4c; box-shadow: 0 0 40px #00ff4c; }
+    100% { background-color: #229605; box-shadow: 0 0 3px #229605; }
 }
 
 .main-image {
@@ -77,9 +98,25 @@ a {
     justify-content: center;
     align-items: center;
     gap: 48px;
+    flex-wrap: wrap;
 }
 
 .info img {
     max-height: 500px;
     width: auto;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.third-segment {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.quotee {
+    text-align: right;
 }
