@@ -2,6 +2,37 @@ body {
     margin: 0;
 }
 
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(28, 241, 28);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+
+    transition: transform 0.3s;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+}
+
+.link:hover {
+    color: #ff0;
+	text-shadow: 0 0 10px #ff0;
+}
+
+.link {
+    position: relative;
+}
+
+.hero-links {
+    padding-right: 24px;
+}
+
 .logo img {
     max-width: 100px;
     height: auto;
@@ -16,6 +47,7 @@ ul {
 a {
     text-decoration: none;
     font-size: 18px;
+    color: rgb(226, 226, 44);
 }
 
 .hero-top {
@@ -27,6 +59,8 @@ a {
 
 .logo-text {
     color: white;
+    font-size: 48px;
+    filter: brightness(150%);
 }
 
 .logo {
@@ -38,10 +72,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('images/main_background.jpg');
+    background: blue url("images/main_background.jpg") no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 
@@ -54,6 +86,7 @@ a {
     padding: 10px;
     margin: 120px 0px;
 }
+
 
 .hero-bottom .button {
     background-color: #004A7F;
@@ -83,14 +116,31 @@ a {
 
 .main-text {
     font-size: 48px;
+    margin-bottom: 24px;
+    color: white;
 }
 
 .secondary-text {
     font-size: 18px;
+    margin-bottom: 24px;
+    color: white;
 }
 
+.info {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+}
+
+.info img {
+    border-radius: 25px;
+}
+
+.info img:hover {
+    outline: yellow solid 4px;
+}
 .second-segment {
     text-align: center;
+    background-color: black;
 }
 
 .second-segment .container {
@@ -99,6 +149,7 @@ a {
     align-items: center;
     gap: 48px;
     flex-wrap: wrap;
+    padding-bottom: 24px;
 }
 
 .info img {
@@ -109,14 +160,102 @@ a {
 .title {
     font-size: 36px;
     font-weight: bolder;
+    color: rgb(226, 226, 44);
+    padding: 24px 0px;
 }
 
 .third-segment {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    background-image: url("images/quote_image.png");
+    height:600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quote {
+    font-size: 48px;
+    text-align: center;
+    color: gold;
+    text-shadow: 0px 0px 10px gold, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 
 .quotee {
-    text-align: right;
+    padding: 10px;
+    text-align: center;
+    color: rgb(200, 228, 98);
+    text-shadow: 0px 0px 10px rgb(0, 204, 255), 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+    font-size: 24px;
+}
+
+.fourth-segment {
+    background: blue url("images/main_background.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-segment .container {
+    display: flex;
+    gap: 48px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.fourth-segment
+.container
+.left
+.main-text {
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px white;
+}
+
+.fourth-segment
+.container
+.left
+.secondary-text {
+    font-size: 18px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    font-size: 18px;
+    background-color: red;
+    border-radius: 10px;
+    border: white;
+    border-width: 5px;
+    padding: 5px;
+}
+
+.button-container button:hover {
+    box-shadow: 0px 0px 20px rgb(0, 204, 255);
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer .copyright {
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer .copyright a {
+    text-decoration: underline;
 }
