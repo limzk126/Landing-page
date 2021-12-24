@@ -1,7 +1,9 @@
 # Landing-page
-HTML and CSS project
 
+A Web landing page inspired by *The Rising of the Shield Hero*.
 
-Credits for images used:
+Technologies used: HTML & CSS
+
+### Credits for images used:
 * ShuOuma: https://wall.alphacoders.com/big.php?i=991043
-* The Rising of the SHIELD HERO Wiki
+* The Rising of the Shield Hero Wiki
